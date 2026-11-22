@@ -59,6 +59,7 @@ h2{font-family:var(--serif);font-size:clamp(38px,4vw,54px);line-height:1.1;lette
 .certifications-content p{color:var(--muted);max-width:480px}
 .certification-list{display:flex;flex-wrap:wrap;gap:10px;list-style:none;padding:0;margin:25px 0 0}
 .certification-list li{border:1px solid #c8d6c9;background:#f7f9f4;padding:10px 16px;font-size:13px;font-weight:700;letter-spacing:.04em}
+.certificate-preview{display:block;width:100%;height:340px;margin:28px 0 16px;border:1px solid #c8d6c9;background:#fff}
 .recognition{background:#edf1e8}
 .award-card{border:1px solid #cdd9cb;background:#f7f9f4;padding:38px}
 .award-mark{display:block;color:#86a483;font-size:33px;line-height:1;margin-bottom:25px}
