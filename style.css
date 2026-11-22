@@ -34,10 +34,8 @@ h1 em,h2 em{font-weight:400;color:#75907c}
 .button-dark:hover{background:#35584b}
 .text-link,.work-links a{font-size:13px;font-weight:700;border-bottom:1px solid #9cad9d;padding-bottom:3px}
 .text-link:hover,.work-links a:hover{color:var(--green)}
-.hero-art{position:relative;display:grid;place-items:center;aspect-ratio:1;border-radius:50%;background:#e8eee3;color:#4f7a67}
-.hero-art svg{width:100%;height:100%}
-.art-label{position:absolute;bottom:15%;font-size:9px;letter-spacing:.19em;font-weight:700}
-.art-label i{display:inline-block;width:3px;height:3px;border-radius:50%;background:currentColor;vertical-align:middle;margin:0 6px}
+.hero-photo{aspect-ratio:1;border-radius:50%;padding:12px;border:1px solid #c8d6c9;background:#e8eee3}
+.hero-photo img{display:block;width:100%;height:100%;object-fit:cover;object-position:center 30%;border-radius:50%}
 .section{padding:110px 0}
 .section-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px}
 .section-number{margin-bottom:24px}
@@ -58,6 +56,9 @@ h2{font-family:var(--serif);font-size:clamp(38px,4vw,54px);line-height:1.1;lette
 .work-content p{color:var(--muted);font-size:14px;margin-bottom:14px}
 .work-content .authors{font-size:12px;color:#849087}
 .work-links{display:flex;flex-wrap:wrap;gap:24px;margin-top:22px}
+.certifications-content p{color:var(--muted);max-width:480px}
+.certification-list{display:flex;flex-wrap:wrap;gap:10px;list-style:none;padding:0;margin:25px 0 0}
+.certification-list li{border:1px solid #c8d6c9;background:#f7f9f4;padding:10px 16px;font-size:13px;font-weight:700;letter-spacing:.04em}
 .recognition{background:#edf1e8}
 .award-card{border:1px solid #cdd9cb;background:#f7f9f4;padding:38px}
 .award-mark{display:block;color:#86a483;font-size:33px;line-height:1;margin-bottom:25px}
@@ -75,6 +76,6 @@ h2{font-family:var(--serif);font-size:clamp(38px,4vw,54px);line-height:1.1;lette
 .contact-links strong{font-weight:500;overflow-wrap:anywhere}
 footer{background:#1b332d;color:#a8bcad;border-top:1px solid #40594e;font-size:11px}
 .footer-inner{display:flex;justify-content:space-between;gap:20px;padding-top:24px;padding-bottom:24px}
-@media(max-width:800px){.wrap{width:min(100% - 40px,680px)}.header-inner{height:72px;gap:16px}.navigation{gap:16px;font-size:12px}.hero{grid-template-columns:1fr;padding-top:70px;padding-bottom:75px;gap:50px}.hero-art{width:min(370px,85%);justify-self:center}.section{padding:76px 0}.section-grid,.contact-inner{grid-template-columns:1fr;gap:35px}.section-heading{align-items:start;flex-direction:column}.work-item{grid-template-columns:1fr;gap:20px}.work-meta{flex-direction:row;align-items:baseline;gap:20px}.contact-inner{gap:40px}}
-@media(max-width:520px){.header-inner{flex-wrap:wrap;height:auto;padding-top:17px;padding-bottom:14px;row-gap:14px}.wordmark{font-size:28px}.languages{margin-left:auto}.navigation{order:3;flex-basis:100%;justify-content:space-between;margin-left:0;gap:8px}.hero{padding-top:55px;min-height:0}h1{font-size:clamp(48px,12vw,64px)}.hero-intro{font-size:21px}.hero-actions{gap:20px}.award-card{padding:28px}.footer-inner{flex-wrap:wrap}.contact-links a{grid-template-columns:65px 1fr auto}}
+@media(max-width:800px){.wrap{width:min(100% - 40px,680px)}.header-inner{height:72px;gap:16px}.navigation{gap:16px;font-size:12px}.hero{grid-template-columns:1fr;padding-top:70px;padding-bottom:75px;gap:50px}.hero-photo{width:min(370px,85%);justify-self:center}.section{padding:76px 0}.section-grid,.contact-inner{grid-template-columns:1fr;gap:35px}.section-heading{align-items:start;flex-direction:column}.work-item{grid-template-columns:1fr;gap:20px}.work-meta{flex-direction:row;align-items:baseline;gap:20px}.contact-inner{gap:40px}}
+@media(max-width:520px){.header-inner{flex-wrap:wrap;height:auto;padding-top:17px;padding-bottom:14px;row-gap:14px}.wordmark{font-size:28px}.languages{margin-left:auto}.navigation{order:3;flex-basis:100%;justify-content:space-between;flex-wrap:wrap;margin-left:0;gap:8px}.hero{padding-top:55px;min-height:0}h1{font-size:clamp(48px,12vw,64px)}.hero-intro{font-size:21px}.hero-actions{gap:20px}.award-card{padding:28px}.footer-inner{flex-wrap:wrap}.contact-links a{grid-template-columns:65px 1fr auto}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
