@@ -1,5 +1,4 @@
 (() => {
-  const preference = window.matchMedia('(prefers-color-scheme: dark)');
   let savedTheme;
   try {
     savedTheme = localStorage.getItem('theme');
@@ -9,19 +8,12 @@
 
   const applyTheme = (theme) => {
     document.documentElement.dataset.theme = theme;
+    document.querySelector('meta[name="theme-color"]').setAttribute('content', theme === 'dark' ? '#121b19' : '#f7f6f1');
     const toggle = document.querySelector('.theme-toggle');
     if (toggle) toggle.setAttribute('aria-pressed', String(theme === 'dark'));
   };
 
-  applyTheme(savedTheme === 'light' || savedTheme === 'dark'
-    ? savedTheme
-    : preference.matches ? 'dark' : 'light');
-
-  preference.addEventListener('change', (event) => {
-    if (savedTheme !== 'light' && savedTheme !== 'dark') {
-      applyTheme(event.matches ? 'dark' : 'light');
-    }
-  });
+  applyTheme(savedTheme === 'light' ? 'light' : 'dark');
 
   document.addEventListener('DOMContentLoaded', () => {
     const toggle = document.querySelector('.theme-toggle');
